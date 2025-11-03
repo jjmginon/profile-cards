@@ -35,7 +35,7 @@ body {
 header,
 footer {
     position: sticky;
-    background-color: #161b22;
+    background-color: #010409;
     color: #e6edf3;
     text-align: center;
 }
@@ -49,7 +49,7 @@ h1 {
 }
 
 nav {
-    background-color: #e6edf3;
+    background-color: #161b22;
     padding: 0.5rem;
     border-bottom: 2px solid #30363d;
     font-weight: bolder;
@@ -57,14 +57,16 @@ nav {
     justify-content: space-evenly;
 }
 
-nav a,
-nav a:visited {
-    color: #010409;
+nav a:any-link {
+    color: #79c0ff;
 }
 
-nav a:hover,
-nav a:focus {
-    color: hsla(0, 0%, 20%, 0.6);
+nav :is(a:hover, a:focus) {
+    color: #56d364;
+}
+
+nav a:active {
+    color: #ff7b72;
 }
 
 main {
@@ -97,6 +99,11 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.card:target {
+    border: 3px solid #161b22;
+    background-image: radial-gradient(#e6edf3, #6e7681);
 }
 
 .card figure {
