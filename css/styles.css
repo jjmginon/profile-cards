@@ -17,8 +17,8 @@ img {
 :root {
     /* FONT */
     --FF: "Inconsolata", monospace;
-    --FS: 1.5rem;
-    --FS-L: 2rem;
+    --FS: clamp(1.5rem, 3vh, 3rem);
+    --FS-L: clamp(2rem, 4vh, 5rem);
 
     /* COLOR */
     --BGCOLOR: #0d1117;
