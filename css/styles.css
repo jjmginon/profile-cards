@@ -76,6 +76,7 @@ footer {
     background-color: var(--ALT-BGCOLOR);
     color: var(--LIGHT-COLOR);
     text-align: center;
+    z-index: 1;
 }
 
 header {
@@ -113,8 +114,8 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 5rem;
-    padding: var(--PADDING);
+    gap: 2rem;
+    padding: 2rem;
 }
 
 p q {
@@ -129,7 +130,7 @@ footer {
 
 /* || PROFILE CARD */
 .card {
-    scroll-margin-top: 8rem;
+    scroll-margin-top: 9rem;
     width: var(--CARD-SIZE);
     background-image: var(--CARD-BGCOLOR);
     border: var(--BORDERS);
@@ -141,9 +142,15 @@ footer {
     color: var(--FONT-COLOR);
 }
 
+.card:hover {
+    border: var(--BORDERS);
+    box-shadow: var(--SHADOWS);
+    transform: scale(1.02);
+    transition: all 0.3s ease-in-out;
+}
+
 .card:target {
     border: var(--BORDERS);
-    background-image: var(--CARD-BGCOLOR);
     box-shadow: var(--SHADOWS);
 }
 
@@ -173,7 +180,7 @@ footer {
     }
 
     .card {
-        width: min(100%, 400px);
+        width: min(100%, 365px);
     }
 
     .card:last-child {
@@ -188,7 +195,12 @@ footer {
     }
 
     .card {
-        width: min(100%, 325px);
+        width: min(100%, 350px);
+    }
+
+    .card:target {
+        border: 0;
+        box-shadow: none;
     }
 
     .card figure {
@@ -213,6 +225,10 @@ footer {
 
 /* || XL */
 @media screen and (min-width: 1200px) {
+    main {
+        gap: 8rem;
+    }
+
     .card {
         width: min(33% - 1rem, 375px);
     }
