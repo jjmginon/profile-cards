@@ -62,21 +62,21 @@ html {
 }
 
 body {
-    font: var(--FS) var(--FF);
-    min-height: 100vh;
-    background-color: var(--BGCOLOR);
-    background-image: radial-gradient(var(--RADIAL-COLOR), var(--BGCOLOR));
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
+    font: var(--FS) var(--FF);
+    background-color: var(--BGCOLOR);
+    background-image: radial-gradient(var(--RADIAL-COLOR), var(--BGCOLOR));
 }
 
 header,
 footer {
     position: sticky;
-    background-color: var(--ALT-BGCOLOR);
-    color: var(--LIGHT-COLOR);
-    text-align: center;
     z-index: 1;
+    text-align: center;
+    color: var(--LIGHT-COLOR);
+    background-color: var(--ALT-BGCOLOR);
 }
 
 header {
@@ -88,12 +88,12 @@ h1 {
 }
 
 nav {
-    background-color: var(--GRAY-COLOR);
+    display: flex;
+    justify-content: space-evenly;
     padding: var(--PADDING);
     border-bottom: var(--BORDERS);
     font-weight: bolder;
-    display: flex;
-    justify-content: space-evenly;
+    background-color: var(--GRAY-COLOR);
     box-shadow: var(--SHADOWS);
 }
 
@@ -110,11 +110,11 @@ nav a:active {
 }
 
 main {
-    flex-grow: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2rem;
+    flex-grow: 1;
     padding: 2rem;
 }
 
@@ -124,22 +124,22 @@ p q {
 }
 
 footer {
-    padding: var(--PADDING);
     bottom: 0;
+    padding: var(--PADDING);
 }
 
 /* || PROFILE CARD */
 .card {
     scroll-margin-top: 9rem;
-    width: var(--CARD-SIZE);
-    background-image: var(--CARD-BGCOLOR);
-    border: var(--BORDERS);
-    border-radius: 4px;
-    padding: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: var(--CARD-SIZE);
+    padding: 1rem;
+    border: var(--BORDERS);
+    border-radius: 4px;
     color: var(--FONT-COLOR);
+    background-image: var(--CARD-BGCOLOR);
 }
 
 .card:hover {
@@ -165,9 +165,9 @@ footer {
 }
 
 .card figcaption {
+    margin: 1rem;
     font-weight: bolder;
     font-size: var(--FS-L);
-    margin: 1rem;
     text-align: center;
 }
 
