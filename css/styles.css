@@ -54,6 +54,11 @@ img {
 }
 
 /* || UTILITY CLASSES */
+.offscreen {
+    position: absolute;
+    left: -10000px;
+}
+
 .nowrap {
     white-space: nowrap;
 }
