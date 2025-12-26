@@ -72,7 +72,8 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    font: var(--FS) var(--FF);
+    font-family: var(--FF);
+    font-size: var(--FS);
     background-color: var(--BGCOLOR);
     background-image: radial-gradient(var(--RADIAL-COLOR), var(--BGCOLOR));
 }
@@ -147,13 +148,13 @@ footer {
     border-radius: 4px;
     color: var(--FONT-COLOR);
     background-image: var(--CARD-BGCOLOR);
+    transition: all 0.3s ease-in-out;
 }
 
 .card:hover {
     border: var(--BORDERS);
     box-shadow: var(--SHADOWS);
     transform: scale(1.02);
-    transition: all 0.3s ease-in-out;
 }
 
 .card:target {
