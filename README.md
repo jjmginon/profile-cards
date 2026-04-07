@@ -1,5 +1,7 @@
 # Team Profile Cards
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/710d5cc8-8cd7-4e4c-87ab-81764b6604d6/deploy-status)](https://app.netlify.com/projects/profile-cards-ui/deploys)
+
 A responsive, accessibility‑first mini‑project showcasing sleek profile cards for a fictional team.  
 Built with semantic HTML and modern CSS, this project demonstrates responsive layouts, smooth navigation, and polished UI/UX design.
 
